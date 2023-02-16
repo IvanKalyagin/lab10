@@ -1,0 +1,8 @@
+<h1>10 Lab</h1>
+<%= form_with url: "/proxy/show", method: :get do |form| %>
+    <%= form.label :input, "Введите натуральное число:"%>
+    <%= form.text_field :input, value: 10 %> <br/>
+    <%= form.label :input, "Введите вид обработки:"%>
+    <%= form.select :side, ['On server', 'On client', 'Blank xml'] %> <br/>
+    <%= form.submit "Ввод"%> 
+<% end %>
